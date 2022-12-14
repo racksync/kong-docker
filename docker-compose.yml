@@ -16,6 +16,8 @@ services:
       interval: 10s
       timeout: 5s
       retries: 5
+    networks:
+      - backend
 
   kong:
     depends_on:
@@ -46,6 +48,8 @@ services:
       interval: 5s
       timeout: 2s
       retries: 15
+    networks:
+      - backend
     
   # https://github.com/pantsel/konga/issues/462#issuecomment-633209833
   konga:
@@ -58,6 +62,13 @@ services:
       # But the default `sails-disk` adapter is not designed for use as a production database;
       - NODE_ENV=development
     ports:
-      - 127.0.0.1:1337:1337
+      - 1337:1337
     volumes:
       - ./konga_data:/app/kongadata
+    networks:
+      - backend
+
+networks:
+  backend:
+    external:
+      name: backend
