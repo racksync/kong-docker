@@ -16,6 +16,9 @@ Kong serves as a scalable, open-source API Gateway that sits in front of your se
 - Health Checks
 - API Transformations
 
+![Kong Docker Setup](./screenshot.png)
+*Kong Docker deployment architecture overview*
+
 ## Status
 
 This deployment is production ready.
