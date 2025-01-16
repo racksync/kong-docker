@@ -1,4 +1,6 @@
-# 🐳 Kong Docker deployment
+# 📢 DISCONTINUED! This place is no longer in operation because a newer and better option is now available. Please visit [kong-gateway-docker](https://github.com/racksync/kong-gateway-docker)
+
+## 🐳 Kong Docker deployment
 ---
 
 Kong API Gateway deployment with docker and docker-compose - The most popular open-source API Gateway built for multi-cloud and hybrid architectures.
